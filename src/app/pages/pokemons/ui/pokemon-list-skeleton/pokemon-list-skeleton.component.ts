@@ -10,6 +10,6 @@ import { SimplePokemon } from '../../../../pokemons/interfaces/simple-pokemon.in
 })
 export class PokemonListSkeletonComponent {
 
-  public pokemons = input.required<SimplePokemon[]>();
+  // public pokemons = input.required<SimplePokemon[]>();
 
 }
