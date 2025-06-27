@@ -1,11 +1,24 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 describe('AppComponent', () => {
+
+  @Component({
+    selector: 'app-navbar',
+    standalone: true,
+    template: `<h1>Hola Mundo</h1>`,
+  })
+  class NavbarComponentMock {}
+
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
+    TestBed.overrideComponent(AppComponent, {
+      set: {
+        imports: [NavbarComponentMock],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      },
+    });
   });
 
   it('should create the app', () => {
