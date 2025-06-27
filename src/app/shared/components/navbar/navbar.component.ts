@@ -6,7 +6,6 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
   standalone: true,
   imports: [ RouterLink, RouterLinkActive ],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {

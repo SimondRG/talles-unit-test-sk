@@ -6,7 +6,6 @@ import { Meta, Title } from '@angular/platform-browser';
   standalone: true,
   imports: [],
   templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class AboutPageComponent implements OnInit {

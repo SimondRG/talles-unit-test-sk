@@ -19,14 +19,6 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/about/about-page.component'),
   },
   {
-    path: 'pricing',
-    loadComponent: () => import('./pages/pricing/pricing-page.component'),
-  },
-  {
-    path: 'contact',
-    loadComponent: () => import('./pages/contact/contact.component'),
-  },
-  {
     path: '**',
     redirectTo: 'about',
   }
